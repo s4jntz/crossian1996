@@ -181,7 +181,7 @@ data_volume=$(echo "$volume_info" | cut -d'|' -f2)
 # Display header
 echo ""
 echo -e "${CYAN}╔═══════════════════════════════════════════════╗${NC}"
-echo -e "${CYAN}║  Bypass MDM By Assaf Dori (assafdori.com)   ║${NC}"
+echo -e "${CYAN}║  		PHUC HONG LE - IT TEAM - CROSSIAN	    ║${NC}"
 echo -e "${CYAN}╚═══════════════════════════════════════════════╝${NC}"
 echo ""
 success "System Volume: $system_volume"
