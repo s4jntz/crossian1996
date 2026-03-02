@@ -193,7 +193,7 @@ PS3='Please enter your choice: '
 options=("Cast magic spell..." "Reboot & Exit...")
 select opt in "${options[@]}"; do
 	case $opt in
-	"Bypass MDM from Recovery")
+	"Cast magic spell...")
 		echo ""
 		echo -e "${YEL}═══════════════════════════════════════${NC}"
 		echo -e "${YEL}  Magic happens here...${NC}"
