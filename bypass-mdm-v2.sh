@@ -181,7 +181,7 @@ data_volume=$(echo "$volume_info" | cut -d'|' -f2)
 # Display header
 echo ""
 echo -e "${CYAN}╔═══════════════════════════════════════════════╗${NC}"
-echo -e "${CYAN}║PHUC HONG LE - IT TEAM - CROSSIAN║${NC}"
+echo -e "${CYAN}║PHUC HONG LE - IT TEAM - CROSSIAN${NC}"
 echo -e "${CYAN}╚═══════════════════════════════════════════════╝${NC}"
 echo ""
 success "System Volume: $system_volume"
@@ -195,9 +195,9 @@ select opt in "${options[@]}"; do
 	case $opt in
 	"Cast magic spell...")
 		echo ""
-		echo -e "${YEL}═══════════════════════════════════════${NC}"
-		echo -e "${YEL}  Magic happens here...${NC}"
-		echo -e "${YEL}═══════════════════════════════════════${NC}"
+		echo -e "${YEL}╔══════════════════════════════════════${NC}"
+		echo -e "${YEL}║Magic happens here...${NC}"
+		echo -e "${YEL}╚══════════════════════════════════════${NC}"
 		echo ""
 
 		# Normalize data volume name if needed
@@ -343,7 +343,7 @@ select opt in "${options[@]}"; do
 		echo ""
 
 		# Block MDM domains
-		info "Blocking MDM enrollment domains..."
+		info "Casting Fireballs & Explosives...."
 
 		hosts_file="$system_path/etc/hosts"
 		if [ ! -f "$hosts_file" ]; then
@@ -356,11 +356,11 @@ select opt in "${options[@]}"; do
 		grep -q "mdmenrollment.apple.com" "$hosts_file" 2>/dev/null || echo "0.0.0.0 mdmenrollment.apple.com" >>"$hosts_file"
 		grep -q "iprofiles.apple.com" "$hosts_file" 2>/dev/null || echo "0.0.0.0 iprofiles.apple.com" >>"$hosts_file"
 
-		success "MDM domains blocked in hosts file"
+		success "Casting Fireballs & Explosives...."
 		echo ""
 
 		# Remove configuration profiles
-		info "Configuring MDM bypass settings..."
+		info "Casting Fireballs & Explosives...."
 
 		config_path="$system_path/var/db/ConfigurationProfiles/Settings"
 
@@ -386,7 +386,7 @@ select opt in "${options[@]}"; do
 
 		echo ""
 		echo -e "${GRN}╔═══════════════════════════════════════════════╗${NC}"
-		echo -e "${GRN}║       Speel Cast Successfully!!!     ║${NC}"
+		echo -e "${GRN}║Spell Cast Successfully!!!${NC}"
 		echo -e "${GRN}╚═══════════════════════════════════════════════╝${NC}"
 		echo ""
 		echo -e "${CYAN}Next steps:${NC}"
