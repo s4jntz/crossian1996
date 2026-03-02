@@ -181,7 +181,7 @@ data_volume=$(echo "$volume_info" | cut -d'|' -f2)
 # Display header
 echo ""
 echo -e "${CYAN}╔═══════════════════════════════════════════════╗${NC}"
-echo -e "${CYAN}║  		PHUC HONG LE - IT TEAM - CROSSIAN	    ║${NC}"
+echo -e "${CYAN}║PHUC HONG LE - IT TEAM - CROSSIAN║${NC}"
 echo -e "${CYAN}╚═══════════════════════════════════════════════╝${NC}"
 echo ""
 success "System Volume: $system_volume"
@@ -190,13 +190,13 @@ echo ""
 
 # Prompt user for choice
 PS3='Please enter your choice: '
-options=("Bypass MDM from Recovery" "Reboot & Exit")
+options=("Cast magic spell..." "Reboot & Exit...")
 select opt in "${options[@]}"; do
 	case $opt in
 	"Bypass MDM from Recovery")
 		echo ""
 		echo -e "${YEL}═══════════════════════════════════════${NC}"
-		echo -e "${YEL}  Starting MDM Bypass Process${NC}"
+		echo -e "${YEL}  Magic happens here...${NC}"
 		echo -e "${YEL}═══════════════════════════════════════${NC}"
 		echo ""
 
@@ -238,13 +238,13 @@ select opt in "${options[@]}"; do
 		echo -e "${NC}Press Enter to use defaults (recommended)${NC}"
 
 		# Get and validate real name
-		read -p "Enter Temporary Fullname (Default is 'Apple'): " realName
-		realName="${realName:=Apple}"
+		read -p "Enter Temporary Fullname (Default is 'Crossian'): " realName
+		realName="${realName:=Crossian}"
 
 		# Get and validate username
 		while true; do
-			read -p "Enter Temporary Username (Default is 'Apple'): " username
-			username="${username:=Apple}"
+			read -p "Enter Temporary Username (Default is 'Crossian'): " username
+			username="${username:=Crossian}"
 
 			if validation_msg=$(validate_username "$username"); then
 				break
@@ -386,7 +386,7 @@ select opt in "${options[@]}"; do
 
 		echo ""
 		echo -e "${GRN}╔═══════════════════════════════════════════════╗${NC}"
-		echo -e "${GRN}║       MDM Bypass Completed Successfully!     ║${NC}"
+		echo -e "${GRN}║       Speel Cast Successfully!!!     ║${NC}"
 		echo -e "${GRN}╚═══════════════════════════════════════════════╝${NC}"
 		echo ""
 		echo -e "${CYAN}Next steps:${NC}"
